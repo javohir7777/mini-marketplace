@@ -1,3 +1,6 @@
+.products {
+  margin: 0 auto;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
