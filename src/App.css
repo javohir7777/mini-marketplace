@@ -1,0 +1,10 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.landing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
