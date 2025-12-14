@@ -29,15 +29,9 @@ const Products = () => {
 
   return (
     <div>
-      <h1 className="product-h1">Products</h1>
-      <div className="carts">
+      <div className="cards">
         {products.map((product) => (
-          <CartItems
-            key={product.id}
-            {...product}
-            addToCart={addToCart}
-            isCart={cart.some((item) => item.id === product.id)}
-          />
+          <CartItems key={product.id} {...product} addToCart={addToCart} />
         ))}
       </div>
     </div>

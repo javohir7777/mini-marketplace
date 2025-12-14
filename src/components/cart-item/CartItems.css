@@ -8,6 +8,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1300px) {
+  .card {
+    width: 100%;
+  }
+}
+
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
@@ -52,6 +58,10 @@
   color: #333;
   margin: 0;
   line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card-footer > div {

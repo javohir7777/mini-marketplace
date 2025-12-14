@@ -1,9 +1,27 @@
-.product-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.carts {
+.cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media (max-width: 1300px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1230px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
